@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Game Hub Shopping Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #0B1120;
+            color: #F8FAFC;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            text-align: center;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 
+                0 0 10px #ff3700,
+                0 0 20px #ff3700,
+                0 0 40px #ff3700;
+            margin: 30px 0;
+
+        }
+
+        /* Buttons*/
+        .btn-primary{
+            background-color:#06B6D4;
+            border:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn-primary:hover{
+            background-color:#00BFFF;
+            transform:scale(1.05);
+        }
+
+        /* Product Card */
+        .card {
+            background: #1E293B;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px #ff3700;
+        }
+
+        /* Image Hover Effect */
+        .product-img {
+            transition: transform 0.4s;
+            border-radius: 8px 8px 0 0;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-img:hover {
+            transform: scale(1.08);
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        footer img {
+            width: 90px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+     <div class="container">
+        <h1>Game Hub</h1>
+
+        <!-- Product Grid -->
+         <div class="row g-4">
+
+            <!-- First Product -->
+             <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/Starfield-Shatterd-Space-keyart-01-27mar26.webp" class="card-img-top img-fluid product-img" alt="Starfield Game">
+                    <div class="card-body text-center">
+                        <h5>Starfield</h5>
+                        <p class="text-success fw-bold">R1 999</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/cyberpunk-2077-phantom-liberty.jpg" class="card-img-top img-fluid product-img" alt="Cyberpunk 2077: Phantom Liberty">
+                    <div class="card-body text-center">
+                        <h5>Cyberpunk 2077: Phantom Liberty</h5>
+                        <p class="text-success fw-bold">R1 299</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/black-myth-wukong-y-naraka-bladepoint-fulgurantes-con-dlss-v0-geqbwqa43xoc1.webp" class="card-img-top img-fluid product-img" alt="Black Myth: Wukong">
+                    <div class="card-body text-center">
+                        <h5>Black Myth: Wukong</h5>
+                        <p class="text-success fw-bold">R1 499</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fourth Product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/co6jar.webp" class="card-img-top img-fluid product-img" alt="Alan Wake 2">
+                    <div class="card-body text-center">
+                        <h5>Alan Wake 2</h5>
+                        <p class="text-success fw-bold">R1 199</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fifth product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/share.jpg" class="card-img-top img-fluid product-img" alt="Hogwarts Legacy">
+                    <div class="card-body text-center">
+                        <h5>Hogwarts Legacy</h5>
+                        <p class="text-success fw-bold">R1 799</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sixth product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f.jpg" class="card-img-top img-fluid product-img" alt="The Witcher 3: Wild Hunt – Complete Edition">
+                    <div class="card-body text-center">
+                        <h5>The Witcher 3: Wild Hunt – Complete Edition</h5>
+                        <p class="text-success fw-bold">R1 499</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- seventh product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/elden-ring-button-03-1623460560664.jpg" class="card-img-top img-fluid product-img" alt="Elden Ring">
+                    <div class="card-body text-center">
+                        <h5>Elden Ring</h5>
+                        <p class="text-success fw-bold">R999</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eighth product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/resident_evil_4__remake__official_poster_by_thesybian_dfs1tod-fullview.jpg" class="card-img-top img-fluid product-img" alt="Resident Evil 4 Remake">
+                    <div class="card-body text-center">
+                        <h5>Resident Evil 4 Remake</h5>
+                        <p class="text-success fw-bold">R1 299</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- nineth product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/social-card.jpg" class="card-img-top img-fluid product-img" alt="Thank Goodness You’re Here!">
+                    <div class="card-body text-center">
+                        <h5>Thank Goodness You’re Here!</h5>
+                        <p class="text-success fw-bold">R899</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tenth product -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="images/Valorant_cover.jpg" class="card-img-top img-fluid product-img" alt="Valorant">
+                    <div class="card-body text-center">
+                        <h5>Valorant</h5>
+                        <p class="text-success fw-bold">R1 299</p>
+                        <button class="btn btn-primary w-100">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <h3 class="mb-4">Contact Us</h3>
+
+            <div class="row align-items-center">
+
+                <!-- Company Logo -->
+                <div class="col-md-2 text-center mb-3">
+                    <img src="images/OIP.webp" class="img-fluid rounded-circle" alt="Game Hub Logo">
+                </div>
+
+                <!-- Horizontal Form -->
+                <div class="col-md-10">
+                    <form class="row g-3">
+
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-success">
+                                Submit
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
